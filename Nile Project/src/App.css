@@ -1,194 +1,18 @@
-/* Global Styles */
-:root {
-  --primary: #3498db; /* Brand blue */
-  --secondary: #2c3e50; /* Dark blue */
-  --accent: #e74c3c; /* Red for CTAs */
-  --light: #ecf0f1; /* Light gray */
-  --dark: #1a252f; /* Footer dark */
-  --blue: blue; /* Blue color for Nile Care*/
-}
+
+
 
 /* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3rem;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo {
-  height: 110px;
-  width: auto;
-}
-
-.company-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--blue);
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.nav-links a {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-decoration: none;
-  color: var(--secondary);
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links .active {
-  color: var(--primary);
-}
 
 /* Service Section (Option A) */
 
-.service-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #333;
-}
 
-.service-container {
-  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
-  position: relative;
-  overflow: hidden;
-}
-
-.service-container::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 200px;
-  height: 200px;
-  background: rgba(100, 200, 255, 0.1);
-  border-radius: 50%;
-  z-index: 0;
-}
-
-/* Footer (Option A) */
-.site-footer {
-  background: linear-gradient(to right, #1a2a3a, #2c3e50);
-  background-image: url("noise.png");
-  background-blend-mode: overlay;
-}
-
-/* Titles */
-.service-title {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  text-align: center;
-  border-bottom: 3px solid #3498db;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-}
-
-.service-category {
-  font-size: 1.8rem;
-  color: #3498db;
-  margin-top: 1.5rem;
-}
-
-.service-description {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 1.5rem;
-}
-
-/* Cards & Subsections */
-.service-card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-
-.service-subsection {
-  margin: 1.5rem 0;
-}
-
-.subsection-title {
-  font-size: 1.4rem;
-  color: #e74c3c;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Lists & Highlights */
-.service-list {
-  list-style-type: none;
-  padding-left: 1rem;
-}
-
-.service-list li {
-  margin: 0.8rem 0;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.service-list li::before {
-  content: "✓";
-  color: #27ae60;
-  position: absolute;
-  left: 0;
-}
-
-.highlight {
-  color: #3498db;
-}
-
-/* CTA Section */
-.cta-section {
-  text-align: center;
-  margin: 3rem 0;
-  padding: 2rem;
-  background: #f8f9fa;
-  border-radius: 10px;
-}
-
-.cta-text {
-  font-size: 1.3rem;
-  color: #2c3e50;
-  margin-bottom: 1.5rem;
-}
-
-.donate-btn {
-  background: #e74c3c;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.donate-btn:hover {
-  background: #c0392b;
-}
 
 /* Footer Styling */
-.site-footer {
+
+
+
+
+/* .site-footer {
   background: #2c3e50;
   color: white;
   padding: 3rem 0 0;
@@ -267,4 +91,4 @@
 .footer-bottom a {
   color: #3498db;
   text-decoration: none;
-}
+} */

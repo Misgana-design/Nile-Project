@@ -1,0 +1,64 @@
+/* Global Styles */
+
+:root {
+  --primary: #3498db; /* Brand blue */
+  --secondary: #2c3e50; /* Dark blue */
+  --accent: #e74c3c; /* Red for CTAs */
+  --light: #ecf0f1; /* Light gray */
+  --dark: #1a252f; /* Footer dark */
+  --blue: blue; /* Blue color for Nile Care*/
+}
+
+.navbar {
+  position: fixed; /* Makes navbar stick */
+  top: 0; /* Positions at the very top */
+  left: 0; /* Ensures full width */
+  width: 100%; /* Takes full viewport width */
+  z-index: 1000; /* Ensures navbar stays above other content */
+  background: linear-gradient(135deg, white 20%, cyan);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-right: 7px; */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  height: 110px;
+  width: auto;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding-right: 70px;
+  /* background-color: #e74c3c; */
+}
+
+.nav-links a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--primary);
+}
