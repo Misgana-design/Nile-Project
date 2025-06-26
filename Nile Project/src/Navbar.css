@@ -45,13 +45,14 @@
   list-style: none;
   margin: 0;
   padding-right: 3rem;
+  text-shadow: 20px;
 }
 
 .nav-links a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-decoration: none;
-  color: var(rgb(0, 0, 0));
+  color: var(rgb(255, 255, 255));
   font-weight: 500;
   transition: color 0.3s;
 }
