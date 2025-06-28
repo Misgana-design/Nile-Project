@@ -1,13 +1,12 @@
+// src/Navbar.jsx
 import logo from "./assets/Logo.jpg";
 import "./Navbar.css";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ onNavigate }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <nav className="navbar">
@@ -16,7 +15,6 @@ export default function Navbar() {
         <span className="company-name">Nile Care</span>
       </div>
 
-      {/* Hamburger menu for mobile */}
       <div className="hamburger" onClick={toggleMenu}>
         <div className={`line ${isOpen ? "line1" : ""}`}></div>
         <div className={`line ${isOpen ? "line2" : ""}`}></div>
@@ -25,24 +23,34 @@ export default function Navbar() {
 
       <ul className={`nav-links ${isOpen ? "active" : ""}`}>
         <li>
-          <a href="#">Home</a>
+          <a href="#" onClick={() => onNavigate("home")}>
+            Home
+          </a>
         </li>
         <li>
-          <a href="#">About Us</a>
+          <a href="#" onClick={() => onNavigate("about")}>
+            About Us
+          </a>
         </li>
         <li>
-          <a href="#">Donation</a>
+          <a href="#" onClick={() => onNavigate("donation")}>
+            Donation
+          </a>
         </li>
         <li>
-          <a href="#" className="active">
+          <a href="#" onClick={() => onNavigate("service")}>
             Services
           </a>
         </li>
         <li>
-          <a href="#">News</a>
+          <a href="#" onClick={() => onNavigate("news")}>
+            News
+          </a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#" onClick={() => onNavigate("contact")}>
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

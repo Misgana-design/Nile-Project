@@ -1,16 +1,29 @@
+// src/App.jsx
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import Service from "./Service";
 
 import Navbar from "./Navbar.jsx";
+import Service from "./Service.jsx";
+import News from "./News.jsx";
 
 function App() {
+  const [activePage, setActivePage] = useState("service"); // default page
+
+  const renderPage = () => {
+    switch (activePage) {
+      case "service":
+        return <Service />;
+      case "news":
+        return <News />;
+      default:
+        return <Service />; // fallback
+    }
+  };
+
   return (
     <>
-      <Navbar />
-      <Service />
+      <Navbar onNavigate={setActivePage} />
+      {renderPage()}
     </>
   );
 }
